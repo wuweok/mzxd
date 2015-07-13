@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/productindex_brand" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_brand" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/font_small" android:gravity="left" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="品牌" android:drawableRight="@drawable/ic_arrow" />
+        </LinearLayout>
+        <include layout="@layout/line_separator" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/productindex_gongxiao" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_gongxiao" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/font_small" android:gravity="left" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="功效" android:drawableRight="@drawable/ic_arrow" />
+        </LinearLayout>
+        <include layout="@layout/line_separator" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/productindex_newproduct" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_new" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/font_small" android:gravity="left" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="新品" android:drawableRight="@drawable/ic_arrow" />
+        </LinearLayout>
+        <include layout="@layout/line_separator" />
+    </LinearLayout>
+    <View android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+</LinearLayout>

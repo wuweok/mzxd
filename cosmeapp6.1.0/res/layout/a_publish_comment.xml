@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/star_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="@dimen/font_middle" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐指数" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/desc" android:layout_centerVertical="true">
+            <View android:id="@id/star1" android:background="@drawable/star_g" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" />
+            <View android:id="@id/star2" android:background="@drawable/star_g" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" />
+            <View android:id="@id/star3" android:background="@drawable/star_g" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" />
+            <View android:id="@id/star4" android:background="@drawable/star_g" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" />
+            <View android:id="@id/star5" android:background="@drawable/star_g" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/message_voice_view" android:layout_width="50.0dip" android:layout_height="38.0dip" android:layout_alignParentRight="true">
+            <Button android:background="@drawable/message_voice_background" android:clickable="false" android:layout_width="19.0dip" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/buttonStyle" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/separator" android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/star_layout" />
+    <ScrollView android:id="@id/scroll" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/separator" android:scrollbarFadeDuration="1500">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/message_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.rockerhieu.emojicon.EmojiconEditText android:textSize="@dimen/font_middle" android:gravity="top" android:id="@id/message" android:background="@null" android:paddingLeft="6.0dip" android:paddingTop="5.0dip" android:paddingRight="6.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="300.0dip" android:hint="内容：说点什么吧...\n(美妆心得是纯交流社区，广告/三无/代购将会被封号)" android:minLines="1" android:lineSpacingMultiplier="1.2" android:isScrollContainer="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

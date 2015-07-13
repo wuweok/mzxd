@@ -1,0 +1,48 @@
+.class final Lcom/buykee/princessmakeup/classes/indexpage/f;
+.super Lcom/buykee/princessmakeup/d/g;
+
+
+# instance fields
+.field final synthetic a:Lcom/buykee/princessmakeup/classes/indexpage/MainActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/buykee/princessmakeup/classes/indexpage/MainActivity;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/buykee/princessmakeup/classes/indexpage/f;->a:Lcom/buykee/princessmakeup/classes/indexpage/MainActivity;
+
+    invoke-direct {p0}, Lcom/buykee/princessmakeup/d/g;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 1
+
+    invoke-static {}, Lcom/buykee/princessmakeup/b/a/k;->c()Lcom/buykee/princessmakeup/b/a/k;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/buykee/princessmakeup/b/a/k;->d()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/buykee/princessmakeup/classes/indexpage/f;->a:Lcom/buykee/princessmakeup/classes/indexpage/MainActivity;
+
+    invoke-virtual {v0}, Lcom/buykee/princessmakeup/classes/indexpage/MainActivity;->c()V
+
+    :goto_0
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcom/buykee/princessmakeup/classes/indexpage/f;->a:Lcom/buykee/princessmakeup/classes/indexpage/MainActivity;
+
+    invoke-virtual {v0}, Lcom/buykee/princessmakeup/classes/indexpage/MainActivity;->d()V
+
+    goto :goto_0
+.end method

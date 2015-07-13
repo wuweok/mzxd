@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/item_layout" android:layout_width="70.0dip" android:layout_height="70.0dip">
+        <ImageView android:id="@id/image" android:layout_width="53.0dip" android:layout_height="53.0dip" android:src="@drawable/mypic" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/image_loading_progress" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" style="@style/top_progressbar" />
+        <ImageView android:id="@id/cover_btn" android:paddingTop="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/cover_unselected" android:scaleType="fitXY" android:layout_alignBottom="@id/image" android:alpha="120.0" />
+        <ImageView android:id="@id/delete_btn" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/fatie_delete" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

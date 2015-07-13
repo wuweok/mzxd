@@ -1,0 +1,10 @@
+.class public final Lcom/buykee/princessmakeup/e/j/e;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/buykee/princessmakeup/e/j/e$a;
+    }
+.end annotation

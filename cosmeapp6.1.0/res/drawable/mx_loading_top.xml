@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/bottle_1" />
+    <item android:duration="100" android:drawable="@drawable/bottle_2" />
+    <item android:duration="100" android:drawable="@drawable/bottle_3" />
+    <item android:duration="100" android:drawable="@drawable/bottle_4" />
+    <item android:duration="100" android:drawable="@drawable/bottle_5" />
+    <item android:duration="100" android:drawable="@drawable/bottle_6" />
+    <item android:duration="100" android:drawable="@drawable/bottle_7" />
+    <item android:duration="100" android:drawable="@drawable/bottle_8" />
+    <item android:duration="100" android:drawable="@drawable/bottle_8" />
+    <item android:duration="100" android:drawable="@drawable/bottle_9" />
+    <item android:duration="100" android:drawable="@drawable/bottle_10" />
+    <item android:duration="100" android:drawable="@drawable/bottle_11" />
+    <item android:duration="100" android:drawable="@drawable/bottle_12" />
+    <item android:duration="100" android:drawable="@drawable/bottle_13" />
+    <item android:duration="100" android:drawable="@drawable/bottle_14" />
+    <item android:duration="100" android:drawable="@drawable/bottle_15" />
+    <item android:duration="100" android:drawable="@drawable/bottle_16" />
+    <item android:duration="100" android:drawable="@drawable/bottle_17" />
+    <item android:duration="100" android:drawable="@drawable/bottle_18" />
+    <item android:duration="100" android:drawable="@drawable/bottle_18" />
+    <item android:duration="100" android:drawable="@drawable/bottle_19" />
+    <item android:duration="100" android:drawable="@drawable/bottle_20" />
+    <item android:duration="100" android:drawable="@drawable/bottle_21" />
+    <item android:duration="100" android:drawable="@drawable/bottle_22" />
+    <item android:duration="100" android:drawable="@drawable/bottle_23" />
+    <item android:duration="100" android:drawable="@drawable/bottle_24" />
+    <item android:duration="100" android:drawable="@drawable/bottle_25" />
+    <item android:duration="100" android:drawable="@drawable/bottle_26" />
+    <item android:duration="100" android:drawable="@drawable/bottle_27" />
+    <item android:duration="100" android:drawable="@drawable/bottle_28" />
+    <item android:duration="100" android:drawable="@drawable/bottle_28" />
+    <item android:duration="100" android:drawable="@drawable/bottle_29" />
+    <item android:duration="100" android:drawable="@drawable/bottle_30" />
+    <item android:duration="100" android:drawable="@drawable/bottle_31" />
+    <item android:duration="100" android:drawable="@drawable/bottle_32" />
+    <item android:duration="100" android:drawable="@drawable/bottle_33" />
+    <item android:duration="100" android:drawable="@drawable/bottle_34" />
+    <item android:duration="100" android:drawable="@drawable/bottle_35" />
+    <item android:duration="100" android:drawable="@drawable/bottle_36" />
+    <item android:duration="100" android:drawable="@drawable/bottle_37" />
+    <item android:duration="100" android:drawable="@drawable/bottle_38" />
+    <item android:duration="100" android:drawable="@drawable/bottle_39" />
+    <item android:duration="100" android:drawable="@drawable/bottle_40" />
+    <item android:duration="100" android:drawable="@drawable/bottle_41" />
+    <item android:duration="100" android:drawable="@drawable/bottle_42" />
+    <item android:duration="100" android:drawable="@drawable/bottle_44" />
+    <item android:duration="100" android:drawable="@drawable/bottle_44" />
+    <item android:duration="100" android:drawable="@drawable/bottle_45" />
+    <item android:duration="100" android:drawable="@drawable/bottle_46" />
+    <item android:duration="100" android:drawable="@drawable/bottle_47" />
+    <item android:duration="100" android:drawable="@drawable/bottle_48" />
+</animation-list>

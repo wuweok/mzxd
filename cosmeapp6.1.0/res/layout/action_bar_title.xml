@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@android:color/holo_red_light" android:gravity="center" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="hello" />
+    <Button android:layout_gravity="center|left" android:id="@id/left_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@android:drawable/ic_media_play" />
+    <Button android:layout_gravity="center|right" android:id="@id/right_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@android:drawable/ic_media_pause" />
+</FrameLayout>

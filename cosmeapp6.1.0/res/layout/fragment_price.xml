@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_middle" android:gravity="center|left" android:id="@id/price_1" android:background="@drawable/selector_list_item" android:paddingLeft="@dimen/small_padding_edges" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="100元以下" />
+        <include layout="@layout/layout_arrow_right" />
+    </RelativeLayout>
+    <include layout="@layout/line_separator" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_middle" android:gravity="center|left" android:id="@id/price_2" android:background="@drawable/selector_list_item" android:paddingLeft="@dimen/small_padding_edges" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="100-200元" />
+        <include layout="@layout/layout_arrow_right" />
+    </RelativeLayout>
+    <include layout="@layout/line_separator" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_middle" android:gravity="center|left" android:id="@id/price_3" android:background="@drawable/selector_list_item" android:paddingLeft="@dimen/small_padding_edges" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="200-500元" />
+        <include layout="@layout/layout_arrow_right" />
+    </RelativeLayout>
+    <include layout="@layout/line_separator" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_middle" android:gravity="center|left" android:id="@id/price_4" android:background="@drawable/selector_list_item" android:paddingLeft="@dimen/small_padding_edges" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="500-1000元" />
+        <include layout="@layout/layout_arrow_right" />
+    </RelativeLayout>
+    <include layout="@layout/line_separator" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_middle" android:gravity="center|left" android:id="@id/price_5" android:background="@drawable/selector_list_item" android:paddingLeft="@dimen/small_padding_edges" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="1000元以上" />
+        <include layout="@layout/layout_arrow_right" />
+    </RelativeLayout>
+    <include layout="@layout/line_separator" />
+</LinearLayout>

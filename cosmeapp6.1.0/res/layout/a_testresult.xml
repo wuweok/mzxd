@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="@dimen/font_small" android:id="@id/skin_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的肤质为:  " />
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_white" android:id="@id/skin_type_text" android:background="#ffff6600" android:paddingLeft="15.0dip" android:paddingTop="1.0dip" android:paddingRight="15.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/test_result_image" android:background="@drawable/you" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <WebView android:id="@id/skin_detail_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <Button android:textSize="@dimen/font_big" android:textColor="@color/default_white" android:layout_gravity="center" android:id="@id/retest_btn" android:background="@drawable/bczl" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" android:layout_margin="@dimen/mid_padding_edges" android:text="重新测试" style="@style/buttonStyle" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/selector_list_item" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.buykee.views.UIGImageView android:id="@id/app_icon" android:padding="12.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:contentDescription="@string/list_icon" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/app_icon">
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_black" android:id="@id/app_name" android:paddingTop="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_light" android:ellipsize="end" android:id="@id/app_desc" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_below="@id/app_name" />
+    </RelativeLayout>
+    <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

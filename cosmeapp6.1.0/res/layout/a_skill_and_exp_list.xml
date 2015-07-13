@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingTop="@dimen/title_bar_height" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/mx_loading_bar" />
+        <com.buykee.views.UIGFooterMoreListView android:id="@id/listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:childIndicatorLeft="0.0dip" android:divider="@null" android:dividerHeight="0.0dip" android:scrollbarFadeDuration="200" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/title_bar_height" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.buykee.views.UIGMultiDropDownSingleList android:id="@id/multi_dropdownlist" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height">
+        <com.buykee.views.UIGTitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftBackground="?back_btn_bg" app:rightBackground="?right_btn_bg" />
+        <com.buykee.views.UIGTitleTabs android:id="@id/title_tabs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</merge>

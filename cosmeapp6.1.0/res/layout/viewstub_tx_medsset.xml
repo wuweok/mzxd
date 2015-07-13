@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/line_separator" />
+    <RelativeLayout android:id="@id/tx_custom_timeset" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/font_middle" android:textColor="@color/blue" android:id="@id/tx_timeset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="设置时间" android:layout_centerVertical="true" />
+        <include layout="@layout/layout_arrow_right" />
+    </RelativeLayout>
+    <include layout="@layout/line_separator" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="analysissdk_dialog_btn_nor">#00000000</item>
+    <item type="drawable" name="analysissdk_dialog_btn_pre">#ff282a2b</item>
+    <item type="drawable" name="actionbar_btn_normal">#ffff4a83</item>
+    <item type="drawable" name="actionbar_btn_selected">#ffffffff</item>
+    <item type="drawable" name="red">#ffff0000</item>
+    <item type="drawable" name="green">#ff00ff00</item>
+    <item type="drawable" name="grey">#ffeeeeee</item>
+    <item type="drawable" name="white">#ffffffff</item>
+    <item type="drawable" name="black">#ff1b1b1b</item>
+    <item type="drawable" name="blue">#ff0099cc</item>
+    <item type="drawable" name="list_item_selected_bg">#fff5f5f5</item>
+    <item type="drawable" name="brand_list_bg">#ffd5d5d5</item>
+    <item type="drawable" name="transparent">@android:color/transparent</item>
+    <item type="drawable" name="separator">#ffeeeeee</item>
+    <item type="drawable" name="vertical_sep">#ffdddddd</item>
+    <item type="drawable" name="user_home_xinde_separator">#ffe8e8e8</item>
+    <item type="drawable" name="user_home_tab_selected">#ffeeeeee</item>
+</resources>

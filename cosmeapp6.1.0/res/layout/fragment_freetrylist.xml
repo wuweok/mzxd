@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.buykee.views.UIGListTopDescView android:id="@id/top_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/layout_no_try" />
+    <com.buykee.views.UIGFooterMoreListView android:id="@id/freetry_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/transparent" android:scrollingCache="false" android:cacheColorHint="@null" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/top_desc" android:fastScrollEnabled="true" android:scrollbarFadeDuration="200" />
+</RelativeLayout>

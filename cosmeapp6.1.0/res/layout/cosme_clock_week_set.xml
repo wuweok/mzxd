@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.buykee.princessmakeup.classes.alarm.views.UIWeekSetItem android:id="@id/monday" android:layout_width="fill_parent" android:layout_height="wrap_content" app:weekday="星期一" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIWeekSetItem android:id="@id/tuesday" android:layout_width="fill_parent" android:layout_height="wrap_content" app:weekday="星期二" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIWeekSetItem android:id="@id/wednesday" android:layout_width="fill_parent" android:layout_height="wrap_content" app:weekday="星期三" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIWeekSetItem android:id="@id/thursday" android:layout_width="fill_parent" android:layout_height="wrap_content" app:weekday="星期四" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIWeekSetItem android:id="@id/friday" android:layout_width="fill_parent" android:layout_height="wrap_content" app:weekday="星期五" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIWeekSetItem android:id="@id/saturday" android:layout_width="fill_parent" android:layout_height="wrap_content" app:weekday="星期六" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIWeekSetItem android:id="@id/sunday" android:layout_width="fill_parent" android:layout_height="wrap_content" app:weekday="星期日" />
+</LinearLayout>

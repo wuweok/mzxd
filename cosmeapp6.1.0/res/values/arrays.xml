@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="color_names">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>White</item>
+        <item>Black</item>
+    </string-array>
+    <string-array name="birds">
+        <item>Eagle</item>
+        <item>Flamingo</item>
+        <item>Heron</item>
+        <item>Ostrich</item>
+        <item>Peacock</item>
+        <item>Penguin</item>
+        <item>Toucan</item>
+        <item>Turkey</item>
+        <item>Vulture</item>
+    </string-array>
+    <string-array name="lessflow">
+        <item>不再提示</item>
+    </string-array>
+    <string-array name="preference_entries_tts_role">
+        <item>晓燕</item>
+        <item>晓宇</item>
+        <item>小研</item>
+        <item>小琪</item>
+        <item>小峰</item>
+        <item>小梅</item>
+        <item>小莉</item>
+        <item>小蓉</item>
+        <item>小芸</item>
+        <item>小坤</item>
+        <item>小强</item>
+        <item>小莹</item>
+        <item>小新</item>
+        <item>楠楠</item>
+        <item>老孙</item>
+    </string-array>
+    <string-array name="preference_values_tts_role">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>vixy</item>
+        <item>vixq</item>
+        <item>vixf</item>
+        <item>vixm</item>
+        <item>vixl</item>
+        <item>vixr</item>
+        <item>vixyun</item>
+        <item>vixk</item>
+        <item>vixqa</item>
+        <item>vixying</item>
+        <item>vixx</item>
+        <item>vinn</item>
+        <item>vils</item>
+    </string-array>
+    <string-array name="preference_entries_tts_music">
+        <item>无背景音乐</item>
+        <item>背景音乐1</item>
+    </string-array>
+    <string-array name="preference_values_tts_music">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="preference_entries_iat_engine">
+        <item>短信转写</item>
+        <item>地图搜索</item>
+        <item>热词搜索</item>
+        <item>视频搜索</item>
+    </string-array>
+    <string-array name="preference_values_iat_engine">
+        <item>sms</item>
+        <item>poi</item>
+        <item>vsearch</item>
+        <item>video</item>
+    </string-array>
+    <string-array name="preference_values_poi_province">
+        <item>全选</item>
+    </string-array>
+    <string-array name="preference_values_poi_city">
+        <item>全选</item>
+    </string-array>
+    <string-array name="preference_entries_iat_rate">
+        <item>8K</item>
+        <item>11K</item>
+        <item>16K</item>
+        <item>22K</item>
+    </string-array>
+    <string-array name="preference_values_iat_rate">
+        <item>rate8k</item>
+        <item>rate11k</item>
+        <item>rate16k</item>
+        <item>rate22k</item>
+    </string-array>
+    <string-array name="preference_entries_isr_engine">
+        <item>歌手识别</item>
+        <item>地名识别</item>
+    </string-array>
+    <string-array name="preference_values_isr_engine">
+        <item>sms</item>
+        <item>poi</item>
+    </string-array>
+    <string-array name="preference_entries_isr_rate">
+        <item>8K</item>
+        <item>11K</item>
+        <item>16K</item>
+        <item>22K</item>
+    </string-array>
+    <string-array name="preference_values_isr_rate">
+        <item>rate8k</item>
+        <item>rate11k</item>
+        <item>rate16k</item>
+        <item>rate22k</item>
+    </string-array>
+</resources>

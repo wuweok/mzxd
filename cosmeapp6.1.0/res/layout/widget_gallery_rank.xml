@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/my_gallery" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.buykee.views.UIGGuideGallery android:gravity="center" android:id="@id/banner_gallery" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spacing="-1.0dip" android:layout_alignParentBottom="true" android:soundEffectsEnabled="false" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/banner_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ProgressBar android:gravity="center" android:id="@id/banner_loadingBar" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" style="@style/top_progressbar" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/banner_radio" android:paddingTop="18.0dip" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_alignParentRight="true">
+        <Button android:id="@id/banner_button0" android:background="@drawable/griditem_rank_notselected" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="10.0dip" style="@style/buttonStyle" />
+        <Button android:id="@id/banner_button1" android:background="@drawable/griditem_rank_notselected" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="10.0dip" style="@style/buttonStyle" />
+        <Button android:id="@id/banner_button2" android:background="@drawable/griditem_rank_notselected" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="10.0dip" style="@style/buttonStyle" />
+        <Button android:id="@id/banner_button3" android:background="@drawable/griditem_rank_notselected" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="10.0dip" style="@style/buttonStyle" />
+        <Button android:id="@id/banner_button4" android:background="@drawable/griditem_rank_selected" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="10.0dip" style="@style/buttonStyle" />
+        <Button android:id="@id/banner_button5" android:background="@drawable/griditem_rank_selected" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="10.0dip" style="@style/buttonStyle" />
+        <Button android:id="@id/banner_button6" android:background="@drawable/griditem_rank_selected" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="10.0dip" style="@style/buttonStyle" />
+        <Button android:id="@id/banner_button7" android:background="@drawable/griditem_rank_selected" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="10.0dip" style="@style/buttonStyle" />
+        <Button android:id="@id/banner_button8" android:background="@drawable/griditem_rank_selected" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="10.0dip" style="@style/buttonStyle" />
+        <Button android:id="@id/banner_button9" android:background="@drawable/griditem_rank_selected" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="10.0dip" style="@style/buttonStyle" />
+    </LinearLayout>
+</RelativeLayout>

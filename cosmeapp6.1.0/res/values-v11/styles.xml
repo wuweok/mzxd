@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light" />
+    <style name="Sherlock.__Theme" parent="@android:style/Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Sherlock.__Theme.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="MyTheme" parent="@style/Theme.Sherlock.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">@color/default_black</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+        <item name="android:actionBarSize">@dimen/title_bar_height</item>
+        <item name="android:actionOverflowButtonStyle">@style/CustomActionButtonOverflow</item>
+        <item name="title_bar_bg">@color/default_pink</item>
+        <item name="back_btn_bg">@drawable/back_normal</item>
+        <item name="share_btn_bg">@drawable/share</item>
+        <item name="refresh_btn_bg">@drawable/refresh</item>
+        <item name="search_btn_bg">@drawable/search</item>
+        <item name="right_btn_bg">@drawable/tijiao_btn_bg</item>
+        <item name="tijiao_btn_bg">@drawable/tijiao_btn_bg</item>
+        <item name="guanzhu_btn_bg">@drawable/tijiao_btn_bg</item>
+        <item name="guanzhu_btn_color">@color/guanzhu_btn_color</item>
+        <item name="tijiao_btn_color">@color/guanzhu_btn_color</item>
+        <item name="title_logo_text">@drawable/logo_text</item>
+        <item name="title_bar_defaultTextColor">@color/default_white</item>
+        <item name="title_bar_defaultLeftTextColor">@color/default_white</item>
+        <item name="title_bar_defaultRightTextColor">@color/default_white</item>
+        <item name="title_shadow">@drawable/transparent</item>
+        <item name="separatorShadow">@drawable/linebg</item>
+        <item name="separatorHeight">0.5dip</item>
+        <item name="icon_mytopic">@drawable/mytopic</item>
+        <item name="icon_daren">@drawable/daren</item>
+        <item name="bottom_bg">@drawable/home_bottom</item>
+        <item name="cursor_color">@color/cursor_color</item>
+        <item name="mybbs_left_btn_bg">@drawable/my_left</item>
+        <item name="mybbs_mid_btn_bg">@drawable/my_mid</item>
+        <item name="mybbs_right_btn_bg">@drawable/my_right</item>
+        <item name="bbshome_tab_selected_color">@color/cursor_color</item>
+    </style>
+    <style name="AnimationActivity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_left_and_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/scale_and_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/scale_and_fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_from_right_and_fade_out</item>
+    </style>
+</resources>

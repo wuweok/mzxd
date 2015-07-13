@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="99.0dip" android:layout_marginTop="35.0dip" android:layout_marginBottom="35.0dip">
+                    <include layout="@layout/line_editview" />
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/avatar_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginRight="19.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <com.makeramen.RoundedImageView android:id="@id/avatar" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/default_avatar" android:scaleType="fitXY" android:contentDescription="@string/app_name" app:corner_radius="360.0dip" />
+                        <TextView android:textSize="@dimen/font_mini" android:textColor="@color/default_pink" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="上传头像" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_grey_middle" android:gravity="center" android:layout_width="wrap_content" android:layout_height="49.0dip" android:layout_marginLeft="17.0dip" android:text="昵称" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_toLeftOf="@id/avatar_btn" android:layout_alignParentLeft="true">
+                        <EditText android:textSize="@dimen/font_middle" android:textColor="@color/title_black" android:gravity="center" android:id="@id/nickname" android:background="@null" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="" android:hint="" android:maxLength="10" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone" />
+                        <include layout="@layout/line_editview" />
+                    </LinearLayout>
+                    <include android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" layout="@layout/line_editview" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/line_editview" />
+                <RelativeLayout android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_grey_middle" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:text="年龄" />
+                    <TextView android:textSize="@dimen/font_middle" android:textColor="@color/title_black" android:gravity="center" android:id="@id/userage" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:text="18" android:layout_centerVertical="true" />
+                    <include android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignLeft="@id/userage" android:layout_alignParentBottom="true" layout="@layout/line_editview" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_grey_middle" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:text="肤质" />
+                    <TextView android:textSize="@dimen/font_middle" android:textColor="@color/title_black" android:gravity="center" android:id="@id/userskin" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:text="干性" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/profile" android:background="@drawable/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_black" android:gravity="center" android:id="@id/profile_desc" android:paddingLeft="@dimen/mid_padding_edges" android:paddingTop="@dimen/small_padding_edges" android:paddingRight="@dimen/mid_padding_edges" android:paddingBottom="@dimen/small_padding_edges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人简介" android:layout_centerVertical="true" />
+                    <EditText android:textSize="@dimen/font_small" android:textColor="#ff858585" android:gravity="center|left" android:id="@id/profile_edit" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_padding_edges" android:text="" android:hint="" android:maxLength="20" android:layout_toRightOf="@id/profile_desc" android:layout_centerVertical="true" android:inputType="textMultiLine" android:imeOptions="actionDone" />
+                </RelativeLayout>
+                <include layout="@layout/line_editview" />
+                <Button android:textSize="@dimen/font_middle" android:textColor="@color/default_white" android:layout_gravity="center" android:id="@id/save" android:background="@drawable/rect_round_grebtn" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="64.0dip" android:layout_marginRight="23.0dip" android:text="保存" style="@style/buttonStyle" />
+                <Button android:textSize="@dimen/font_middle" android:textColor="@color/default_white" android:layout_gravity="center" android:id="@id/logout" android:background="@drawable/rect_round_redbtn" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="23.0dip" android:layout_marginBottom="50.0dip" android:text="退出登录" style="@style/buttonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.buykee.views.UIGListChooser android:layout_gravity="bottom" android:id="@id/age_chooser" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.buykee.views.UIGListChooser android:layout_gravity="bottom" android:id="@id/skin_chooser" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.buykee.views.UIGToastView android:id="@id/toast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

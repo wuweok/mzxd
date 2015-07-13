@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/tx_time_view" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="?separatorHeight" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.buykee.views.UIGClockTextView android:textSize="@dimen/font_big" android:textColor="@color/blue" android:id="@id/tx_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="2.0dip" android:text="22:00" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_middle" android:id="@id/tx_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="设置提醒时间" android:layout_below="@id/tx_time" />
+        </LinearLayout>
+        <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="?separatorHeight" android:layout_alignParentBottom="true" />
+        <include layout="@layout/layout_arrow_right" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tx_custom_infoset" android:background="@drawable/selector_list_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/font_middle" android:textColor="@color/blue" android:id="@id/tx_custom_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="30.0dip" android:text="设置提醒名称" android:singleLine="true" android:layout_centerVertical="true" />
+        <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="?separatorHeight" android:layout_alignParentBottom="true" />
+        <include layout="@layout/layout_arrow_right" />
+    </RelativeLayout>
+</LinearLayout>

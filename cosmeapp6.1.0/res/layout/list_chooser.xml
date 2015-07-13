@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/list_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/bg" android:background="#88000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/list_chooser" />
+    <TextView android:background="#88000000" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/bg" />
+    <LinearLayout android:orientation="vertical" android:id="@id/list_chooser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/act_layout" android:background="#fffea4c0" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <RelativeLayout android:id="@id/cancel" android:layout_width="50.0dip" android:layout_height="45.0dip" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_white" android:gravity="center" android:background="@drawable/selectdialog_cancel" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <EditText android:textSize="@dimen/font_small" android:gravity="center" android:id="@id/page_edit" android:background="@drawable/search_edit_bg" android:visibility="gone" android:fadingEdge="none" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="1" android:layout_centerInParent="true" android:inputType="numberSigned" android:imeOptions="actionDone" />
+            <RelativeLayout android:id="@id/sure" android:layout_width="80.0dip" android:layout_height="45.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_white" android:gravity="center" android:background="@drawable/selectdialog_sure" android:layout_width="21.0dip" android:layout_height="15.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/list_layout" android:layout_width="fill_parent" android:layout_height="240.0dip">
+            <ListView android:id="@id/popup_list" android:background="@drawable/white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="240.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_alignParentLeft="true" />
+            <TextView android:id="@id/selectedview" android:background="@drawable/selectat" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

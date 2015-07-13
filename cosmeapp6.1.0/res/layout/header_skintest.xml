@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_middle" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试你的肤质" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="#ff9c9c9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="请根据您最近三个月的体验和感觉回答一下问题。\n平均测试用时两分钟" android:layout_below="@id/title" android:lineSpacingExtra="3.0dip" />
+</RelativeLayout>

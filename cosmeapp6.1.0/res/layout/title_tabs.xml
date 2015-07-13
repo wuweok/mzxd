@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:background="@drawable/tab_select_bg" android:layout_width="170.0dip" android:layout_height="32.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_small" android:textColor="?title_bar_defaultTextColor" android:gravity="center" android:layout_gravity="center" android:id="@id/first_tab" android:background="@drawable/tab_select_red" android:layout_width="0.0dip" android:layout_height="27.0dip" android:layout_marginLeft="2.5dip" android:text="精华" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="?title_bar_defaultTextColor" android:gravity="center" android:layout_gravity="center" android:id="@id/second_tab" android:layout_width="0.0dip" android:layout_height="27.0dip" android:text="话题" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="?title_bar_defaultTextColor" android:gravity="center" android:layout_gravity="center" android:id="@id/third_tab" android:layout_width="0.0dip" android:layout_height="27.0dip" android:layout_marginRight="2.5dip" android:text="小组" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bbs_product_insert_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_padding_edges" android:layout_marginRight="@dimen/small_padding_edges"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/video_image" android:layout_width="@dimen/product_size" android:layout_height="@dimen/product_size" android:layout_margin="@dimen/padding_edges" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_black" android:ellipsize="end" android:gravity="left" android:id="@id/video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginRight="15.0dip" android:text="视频" android:layout_toRightOf="@id/video_image" android:layout_centerVertical="true" android:lineSpacingExtra="2.0dip" />
+    <ImageView android:background="@drawable/product_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mid_padding_edges" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

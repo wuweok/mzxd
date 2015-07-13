@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/default_grey_bg" android:padding="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/font_small" android:textColor="@color/default_white" android:id="@id/search_btn" android:background="@drawable/tijiao" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_marginRight="9.0dip" android:text="@string/search_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/buttonStyle" />
+        <ImageView android:gravity="center|left" android:id="@id/search_edit" android:background="@drawable/homepage_search_bar" android:layout_width="fill_parent" android:layout_height="31.0dip" android:layout_toLeftOf="@id/search_btn" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/imSearch" android:paddingLeft="16.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/searchbox_icon" android:layout_alignTop="@id/search" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

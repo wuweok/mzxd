@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/scrollview_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/bg" android:background="@color/default_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/button_bar_height" />
+    <ScrollView android:id="@id/scrollview" android:background="@color/default_white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/button_bar_height">
+        <LinearLayout android:orientation="vertical" android:id="@id/history_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.buykee.views.UIGScrollListView android:id="@id/listview" android:background="@color/default_white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/selector_list_item" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:childIndicatorLeft="0.0dip" android:divider="@null" android:dividerHeight="0.0dip" android:scrollbarFadeDuration="200" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip">
+                <Button android:textSize="@dimen/font_small" android:gravity="center" android:id="@id/clear_history_btn" android:background="@drawable/clear_history_btn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="清空搜索记录" android:layout_centerInParent="true" style="@style/buttonStyle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

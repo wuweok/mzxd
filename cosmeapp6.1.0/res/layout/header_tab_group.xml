@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.buykee.views.UIGGallery android:id="@id/tabgroup_gallery" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/bbs_activity_rlayout" android:background="@drawable/white_round_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/ic_activity" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/bbshome_tabgroup_activity" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/notice_icon_text_size" android:textColor="@color/default_white" android:gravity="center" android:id="@id/activity_new" android:background="@drawable/notice_icon" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/notice_icon_size" android:layout_marginLeft="40.0dip" android:layout_marginTop="5.0dip" android:minWidth="@dimen/notice_icon_size" android:text="" />
+            <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_grey_dark" android:gravity="center" android:id="@id/bbs_activity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="社区活动" android:layout_toRightOf="@id/ic_activity" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:layout_width="10.0dip" android:layout_height="65.0dip" />
+        <RelativeLayout android:id="@id/followed_dynamic_rlayout" android:background="@drawable/white_round_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/icon_dynamic" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/bbshome_tabgroup_dynamic" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_grey_dark" android:gravity="center" android:id="@id/followed_dynamic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="好友动态" android:layout_toRightOf="@id/icon_dynamic" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

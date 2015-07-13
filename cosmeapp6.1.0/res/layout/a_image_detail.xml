@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/default_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.buykee.views.UIGRoundProgressBar android:id="@id/roundProgressBar" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true" app:roundColor="#ffd1d1d1" app:roundProgressColor="@color/default_black" app:roundWidth="10.0dip" app:roundTextColor="#ff9a32cd" app:roundTextSize="18.0sp" app:textIsDisplayable="false" />
+    <com.buykee.views.UIGHackyViewPager android:layout_gravity="center" android:id="@id/vPager" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:flipInterval="30" android:layout_centerInParent="true" />
+</RelativeLayout>

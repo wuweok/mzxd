@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="left" android:orientation="vertical" android:background="@color/default_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="19.0dip" android:layout_marginTop="39.0dip" android:layout_marginRight="9.0dip">
+        <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_black" android:id="@id/article_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="拒绝油光，夏日出油大作战" android:singleLine="true" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_middle" android:id="@id/article_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:text="拒绝油光，夏日出油大作战" />
+        <ImageView android:id="@id/article_image" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginTop="9.0dip" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="#ffcdcdc9" android:layout_width="0.5dip" android:layout_height="13.0dip" android:layout_marginLeft="9.5dip" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_pink" android:id="@id/article_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="6月18" android:drawableLeft="@drawable/ic_article_round" android:drawablePadding="5.0dip" />
+        <View android:background="#ffcdcdc9" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginLeft="9.5dip" />
+    </LinearLayout>
+</FrameLayout>

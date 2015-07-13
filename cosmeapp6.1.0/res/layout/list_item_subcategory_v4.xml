@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/selector_list_item" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_small" android:gravity="center|left" android:id="@id/list_name" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="65.0dip" android:layout_marginRight="@dimen/small_padding_edges" android:minWidth="80.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_dark" android:gravity="center|left" android:id="@id/list_child" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/small_padding_edges" android:layout_toRightOf="@id/list_name" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <include android:layout_marginTop="@dimen/small_padding_edges" android:layout_marginBottom="@dimen/small_padding_edges" android:layout_centerVertical="true" layout="@layout/layout_arrow_right" />
+    <include android:layout_width="fill_parent" android:layout_height="?separatorHeight" android:layout_alignParentBottom="true" layout="@layout/line_separator" />
+</RelativeLayout>

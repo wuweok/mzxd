@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff636b70" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/myNotification_imageView_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_launcher" />
+        <TextView android:textColor="#ffffffff" android:id="@id/myNotification_imageView_title" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/myNotification_imageView_icon" android:layout_alignParentRight="true" />
+        <TextView android:textColor="#fffefeff" android:id="@id/myNotification_imageView_content" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_below="@id/myNotification_imageView_icon" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <TextView android:textColor="#fffefeff" android:id="@id/myNotification_imageView_time" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="16:55" android:layout_below="@id/myNotification_imageView_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

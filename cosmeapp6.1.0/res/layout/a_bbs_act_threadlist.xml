@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.buykee.views.UIGFooterMoreListView android:id="@id/actthread_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:childIndicatorLeft="0.0dip" android:divider="@null" android:dividerHeight="0.0dip" android:fastScrollEnabled="true" android:scrollbarFadeDuration="200" />
+    <include layout="@layout/mx_loading_bar" />
+    <ImageView android:id="@id/back_top_image" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="12.0dip" android:src="@drawable/back_top" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

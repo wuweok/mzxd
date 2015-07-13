@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/selector_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/line_separator" />
+    <com.makeramen.RoundedImageView android:id="@id/avatar" android:layout_width="@dimen/bbs_avatar_size" android:layout_height="@dimen/bbs_avatar_size" android:layout_margin="@dimen/small_padding_edges" android:src="@drawable/mypic" android:scaleType="fitXY" android:contentDescription="@string/app_name" app:corner_radius="360.0dip" app:border_width="0.0dip" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.rockerhieu.emojicon.EmojiconTextView android:textSize="@dimen/font_small" android:ellipsize="end" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:singleLine="true" emojicon:emojiconSize="@dimen/font_emoji" xmlns:emojicon="http://schemas.android.com/apk/res-auto" />
+            <com.rockerhieu.emojicon.EmojiconTextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_dark" android:ellipsize="end" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="100.0dip" android:singleLine="true" android:layout_below="@id/user_name" android:layout_centerVertical="true" emojicon:emojiconSize="@dimen/font_emoji" xmlns:emojicon="http://schemas.android.com/apk/res-auto" />
+            <TextView android:textSize="@dimen/font_mini" android:textColor="@color/default_grey_light" android:id="@id/publish_time" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/message" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

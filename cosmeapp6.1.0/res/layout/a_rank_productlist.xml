@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@id/listview" android:background="@color/default_grey_bg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:childIndicatorLeft="0.0dip" android:divider="@null" android:dividerHeight="0.0dip" android:scrollbarFadeDuration="200" />
+    <include layout="@layout/mx_loading_bar" />
+</RelativeLayout>

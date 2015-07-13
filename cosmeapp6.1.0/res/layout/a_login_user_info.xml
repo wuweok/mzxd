@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/login_from_layout" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/login_type" android:background="@drawable/logo_sinaweibo" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                        <ImageView android:background="@drawable/loginchange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" />
+                        <ImageView android:background="@drawable/ic_launcher" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <include layout="@layout/line_separator" />
+                        <RelativeLayout android:id="@id/avatar_layout" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_black" android:id="@id/avatar_desc" android:padding="@dimen/mid_padding_edges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="头像" android:layout_centerVertical="true" />
+                            <com.makeramen.RoundedImageView android:id="@id/myavatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/small_padding_edges" android:layout_marginTop="@dimen/mid_padding_edges" android:layout_marginBottom="@dimen/mid_padding_edges" android:src="@drawable/loading_avatar" android:scaleType="fitXY" android:layout_toRightOf="@id/avatar_desc" android:layout_centerVertical="true" app:corner_radius="4.0dip" app:border_width="0.0dip" />
+                        </RelativeLayout>
+                        <include layout="@layout/line_separator" />
+                        <RelativeLayout android:id="@id/nick" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_black" android:gravity="center" android:id="@id/nick_desc" android:paddingLeft="@dimen/mid_padding_edges" android:paddingTop="@dimen/small_padding_edges" android:paddingRight="@dimen/mid_padding_edges" android:paddingBottom="@dimen/small_padding_edges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称" android:layout_centerVertical="true" />
+                            <EditText android:textSize="@dimen/font_small" android:textColor="#ff858585" android:gravity="center|left" android:id="@id/nickname" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_padding_edges" android:text="" android:hint="" android:maxLength="10" android:layout_toRightOf="@id/nick_desc" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone" />
+                        </RelativeLayout>
+                        <include layout="@layout/line_separator" />
+                        <RelativeLayout android:id="@id/age" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_black" android:gravity="center" android:id="@id/userage_desc" android:paddingLeft="@dimen/mid_padding_edges" android:paddingTop="@dimen/small_padding_edges" android:paddingRight="@dimen/mid_padding_edges" android:paddingBottom="@dimen/small_padding_edges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="年龄" android:layout_centerVertical="true" />
+                            <TextView android:textSize="@dimen/font_small" android:textColor="#ff858585" android:gravity="center|left" android:id="@id/userage" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_padding_edges" android:text="" android:layout_toRightOf="@id/userage_desc" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <include layout="@layout/line_separator" />
+                        <RelativeLayout android:id="@id/skin" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_black" android:gravity="center" android:id="@id/userskin_desc" android:paddingLeft="@dimen/mid_padding_edges" android:paddingTop="@dimen/small_padding_edges" android:paddingRight="@dimen/mid_padding_edges" android:paddingBottom="@dimen/small_padding_edges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="肤质" android:layout_centerVertical="true" />
+                            <TextView android:textSize="@dimen/font_small" android:textColor="#ff858585" android:gravity="center|left" android:id="@id/userskin" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_padding_edges" android:text="" android:layout_toRightOf="@id/userskin_desc" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <include layout="@layout/line_separator" />
+                    </LinearLayout>
+                    <Button android:textSize="18.0sp" android:textColor="@color/default_white" android:layout_gravity="center" android:id="@id/save" android:background="@drawable/bczl" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" android:layout_margin="@dimen/mid_padding_edges" android:text="保存资料" style="@style/buttonStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <com.buykee.views.UIGListChooser android:layout_gravity="bottom" android:id="@id/age_chooser" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.buykee.views.UIGListChooser android:layout_gravity="bottom" android:id="@id/skin_chooser" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

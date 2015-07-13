@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.buykee.views.UIGResizeLayout android:id="@id/root_layout" android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:emojicon="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/default_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.buykee.princessmakeup.classes.bbs.views.UIBBSPublishThreadMessageEditView android:id="@id/reply_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.buykee.princessmakeup.classes.bbs.views.UIBBSPublishThreadImageListView android:id="@id/image_listview" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+            <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="?separatorHeight" android:layout_marginLeft="6.0dip" />
+            <com.buykee.princessmakeup.classes.bbs.views.UIBBSPublishThreadChooserView android:id="@id/pub_chooser_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/message_match_parent_view" android:background="@color/default_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.rockerhieu.emojicon.EmojiconEditText android:textSize="@dimen/font_middle" android:gravity="top" android:layout_gravity="top" android:id="@id/message_match_parent" android:background="@color/default_white" android:padding="6.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="54.0dip" android:hint="说说你的使用心得......\n（美妆心得是纯交流社区，广告/三无/代购将会被封号）" android:minLines="1" android:lineSpacingMultiplier="1.1" android:isScrollContainer="true" emojicon:emojiconSize="@dimen/font_middle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/keyboard_topview" android:background="@color/default_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <Button android:id="@id/face_btn" android:background="@drawable/publish_thread_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginRight="50.0dip" android:layout_centerVertical="true" android:onClick="emojiBtnClicked" style="@style/buttonStyle" />
+            <Button android:id="@id/voice_btn" android:background="@drawable/publish_thread_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_toRightOf="@id/face_btn" android:layout_centerVertical="true" android:onClick="onVoiceBtnClicked" style="@style/buttonStyle" />
+            <Button android:id="@id/hide_keyboard_btn" android:background="@drawable/publish_thread_keyboard_hide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="hideKeyBoardBtnClicked" style="@style/buttonStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/sep" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="?separatorHeight" />
+            <fragment android:id="@id/emojicons" android:layout_width="fill_parent" android:layout_height="210.0dip" android:layout_below="@id/sep" class="com.rockerhieu.emojicon.EmojiconsFragment" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.buykee.princessmakeup.classes.bbs.views.UIBBSPublishThreadPhotoDialog android:id="@id/photo_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.buykee.views.UIGToastView android:id="@id/toast_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</com.buykee.views.UIGResizeLayout>

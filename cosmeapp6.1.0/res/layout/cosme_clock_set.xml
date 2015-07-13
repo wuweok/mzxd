@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="82.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/tx_daycare" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/font_small" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="护肤提醒" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_middle" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="提醒小主儿每日护肤" />
+    </LinearLayout>
+    <com.buykee.views.UIGNoticeButton android:id="@id/notice_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@drawable/dou_line" android:layout_width="fill_parent" android:layout_height="?separatorHeight" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

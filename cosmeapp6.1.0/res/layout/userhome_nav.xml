@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabWidget android:id="@id/userhome_navbar" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:tabStripEnabled="false">
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/userhome_tab_selected" android:gravity="center" android:id="@id/mybbsthreadtab" android:background="@drawable/userhome_tab_selected" android:paddingTop="6.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="帖子" android:layout_weight="1.0" />
+        <View android:background="@drawable/vertical_sep" android:visibility="gone" android:layout_width="@dimen/separator_line_width" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/userhome_tab_selected" android:gravity="center" android:id="@id/indextab" android:background="@drawable/userhome_tab_selected" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="首页" android:layout_weight="1.0" />
+        <View android:background="@drawable/vertical_sep" android:layout_width="@dimen/separator_line_width" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/userhome_tab_selected" android:gravity="center" android:id="@id/dptab" android:background="@drawable/userhome_tab_selected" android:paddingTop="6.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="点评" android:layout_weight="1.0" />
+        <View android:background="@drawable/vertical_sep" android:visibility="gone" android:layout_width="@dimen/separator_line_width" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/userhome_tab_selected" android:gravity="center" android:id="@id/usedtab" android:background="@drawable/userhome_tab_selected" android:paddingTop="6.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="买过" android:layout_weight="1.0" />
+        <View android:background="@drawable/vertical_sep" android:layout_width="@dimen/separator_line_width" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/userhome_tab_selected" android:gravity="center" android:id="@id/wanttab" android:background="@drawable/userhome_tab_selected" android:paddingTop="6.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="欲望清单" android:layout_weight="1.0" />
+    </TabWidget>
+    <include layout="@layout/line_separator" />
+</LinearLayout>

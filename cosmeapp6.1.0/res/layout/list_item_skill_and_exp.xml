@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/normal_rlayout" android:background="@drawable/selector_list_item" android:layout_width="fill_parent" android:layout_height="91.5dip">
+        <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="90.0dip">
+            <RelativeLayout android:id="@id/image_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@id/image" android:background="@drawable/transparent" android:layout_width="105.0dip" android:layout_height="70.0dip" android:layout_margin="8.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/is_video_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_video" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/font_middle" android:id="@id/subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="1.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/image_rl" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_dark" android:id="@id/username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/image_rl" android:layout_below="@id/subject" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:layout_toRightOf="@id/image_rl" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/font_mini" android:textColor="@color/default_grey_middle" android:id="@id/post_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="111" android:singleLine="true" android:drawableLeft="@drawable/ic_normal_post" android:drawablePadding="5.0dip" android:layout_alignBottom="@id/image" />
+                <TextView android:textSize="@dimen/font_mini" android:textColor="@color/default_grey_middle" android:id="@id/zan_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:drawableLeft="@drawable/ic_normal_zan" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/post_count" android:layout_alignBottom="@id/image" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.makeramen.RoundedImageView android:layout_gravity="right" android:id="@id/user_avatar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/default_avatar" android:scaleType="fitXY" android:layout_alignParentRight="true" app:corner_radius="360.0dip" />
+        <include layout="@layout/line_separator" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/big_image_llayout" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/big_image_rlayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/big_image" android:layout_width="fill_parent" android:layout_height="120.0dip" android:src="@drawable/default_pic" android:scaleType="fitXY" />
+            <ImageView android:id="@id/big_image_is_video_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/big_image_top" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/recommend_item_bg" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/big_image_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:text="评价法国药妆，心得分享妆" />
+            <TextView android:textSize="@dimen/font_mini" android:textColor="@color/default_grey_middle" android:gravity="center" android:id="@id/big_image_post_count" android:background="@drawable/topic_recommend_comment" android:layout_width="wrap_content" android:layout_height="23.0dip" android:layout_marginRight="16.0dip" android:text="111" android:singleLine="true" android:layout_below="@id/big_image_subject" android:layout_alignBottom="@id/big_image" />
+            <TextView android:textSize="@dimen/font_mini" android:textColor="@color/default_grey_middle" android:gravity="center" android:id="@id/big_image_zan_count" android:background="@drawable/topic_recommend_zan" android:layout_width="wrap_content" android:layout_height="23.0dip" android:text="0" android:singleLine="true" android:layout_toRightOf="@id/big_image_post_count" android:layout_below="@id/big_image_subject" android:layout_alignBottom="@id/big_image" />
+            <com.makeramen.RoundedImageView android:layout_gravity="right" android:id="@id/big_image_user_avatar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/default_avatar" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerInParent="true" app:corner_radius="360.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

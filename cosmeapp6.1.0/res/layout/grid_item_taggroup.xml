@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.RoundedImageView android:layout_gravity="center" android:id="@id/item_grid_tag_image" android:layout_width="94.0dip" android:layout_height="94.0dip" android:src="@drawable/default_pic" android:scaleType="centerCrop" android:contentDescription="@string/app_name" app:corner_radius="2.0dip" app:border_width="0.0dip" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_white" android:ellipsize="end" android:gravity="center|left" android:id="@id/item_grid_tag_text" android:background="@drawable/rect_bottom_halfblack" android:paddingLeft="@dimen/spacing_mini" android:layout_width="wrap_content" android:layout_height="22.0dip" android:text="标签" android:singleLine="true" android:layout_alignLeft="@id/item_grid_tag_image" android:layout_alignRight="@id/item_grid_tag_image" android:layout_alignBottom="@id/item_grid_tag_image" />
+</RelativeLayout>

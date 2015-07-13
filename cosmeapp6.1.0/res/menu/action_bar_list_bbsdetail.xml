@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_meizutab_prepage" android:id="@id/menu_pre" android:title="" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_meizutab_pagelist" android:id="@id/menu_show_pageview" android:title="" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_meizutab_nextpage" android:id="@id/menu_next" android:title="" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_meizutab_reply" android:id="@id/menu_pubtopic" android:title="" android:showAsAction="always" />
+</menu>

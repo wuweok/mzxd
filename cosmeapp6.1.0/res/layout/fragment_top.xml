@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/mx_loading_bar" />
+        <LinearLayout android:id="@id/linearLayout1" android:background="#aaeeeeee" android:layout_width="fill_parent" android:layout_height="33.0dip">
+            <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="center" android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="center" android:id="@id/text2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="center" android:id="@id/text3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="center" android:id="@id/text4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="center" android:id="@id/text5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="center" android:id="@id/text6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/linearLayout1" />
+        <TextView android:gravity="center" android:id="@id/cursor" android:background="@drawable/cursor_selected" android:layout_width="wrap_content" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="5.0dip" android:scaleType="matrix" android:layout_below="@id/linearLayout1" android:layout_centerVertical="true" />
+        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/vPager" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:flipInterval="30" android:layout_below="@id/linearLayout1" />
+    </RelativeLayout>
+</FrameLayout>

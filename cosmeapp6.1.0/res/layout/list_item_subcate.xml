@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_black" android:gravity="center|left" android:id="@id/subitem_title" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="@dimen/spacing_middle" android:layout_marginRight="@dimen/spacing_middle" android:text="item" android:drawableRight="@drawable/ic_arrow" />
+    <include layout="@layout/line_separator" />
+</LinearLayout>

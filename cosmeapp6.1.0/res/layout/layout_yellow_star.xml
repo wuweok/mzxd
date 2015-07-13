@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/star1_yellow" android:background="@drawable/star2" android:layout_width="@dimen/star_size" android:layout_height="@dimen/star_size" />
+    <View android:id="@id/star2_yellow" android:background="@drawable/star2" android:layout_width="@dimen/star_size" android:layout_height="@dimen/star_size" />
+    <View android:id="@id/star3_yellow" android:background="@drawable/star2" android:layout_width="@dimen/star_size" android:layout_height="@dimen/star_size" />
+    <View android:id="@id/star4_yellow" android:background="@drawable/star2" android:layout_width="@dimen/star_size" android:layout_height="@dimen/star_size" />
+    <View android:id="@id/star5_yellow" android:background="@drawable/star2" android:layout_width="@dimen/star_size" android:layout_height="@dimen/star_size" />
+</LinearLayout>

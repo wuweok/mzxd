@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/list_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/list_chooser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/list_layout" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="240.0dip">
+            <ListView android:id="@id/listview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/selecetedview_layout" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_centerVertical="true">
+            <TextView android:id="@id/selectedview" android:background="@drawable/selectat" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

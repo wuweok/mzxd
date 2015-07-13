@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="42.0dip" />
+    <RelativeLayout android:background="#88000000" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="42.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/font_small" android:textColor="@color/default_white" android:gravity="center" android:layout_gravity="center" android:id="@id/choose_video_btn" android:background="@drawable/guanzhu" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="请查找视频" android:layout_centerInParent="true" style="@style/buttonStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ee222222" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/go_left" android:background="@drawable/toolbar_web_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" style="@style/buttonStyle" />
+        <Button android:id="@id/go_right" android:background="@drawable/toolbar_web_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/go_left" android:layout_alignBaseline="@id/go_left" style="@style/buttonStyle" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+            <Button android:id="@id/go_refresh" android:background="@drawable/toolbar_web_refresh" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignBaseline="@id/go_left" android:layout_alignParentRight="true" style="@style/buttonStyle" />
+            <Button android:enabled="false" android:id="@id/cancel_btn" android:background="@drawable/toolbar_web_cancel_disable" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/buttonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="49.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tabview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/imageview" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/selector_bottom_home" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/tab_indicator_text" android:id="@id/textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="首页" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/notice_icon_text_size" android:textColor="@color/default_white" android:gravity="center" android:id="@id/notice_num" android:background="@drawable/pub_item_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/notice_icon_size" android:layout_marginLeft="-7.0dip" android:layout_marginTop="2.0dip" android:minWidth="@dimen/notice_icon_size" android:text="0" android:layout_toRightOf="@id/tabview" />
+    <ImageView android:gravity="center" android:id="@id/notice_round_bg" android:background="@drawable/ic_notice_round" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="0" android:layout_toRightOf="@id/tabview" />
+</RelativeLayout>

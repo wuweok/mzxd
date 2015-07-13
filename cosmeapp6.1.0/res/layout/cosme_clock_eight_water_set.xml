@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/line_separator" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIEightWaterItem android:id="@id/water_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:eightwater_set_time="08:00" app:eightwater_set_desc="起床喝杯水，有助于清理肠胃" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIEightWaterItem android:id="@id/water_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:eightwater_set_time="09:00" app:eightwater_set_desc="工作前喝杯水，提前预存上午水分" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIEightWaterItem android:id="@id/water_3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:eightwater_set_time="11:00" app:eightwater_set_desc="午饭前来一杯，补充上午缺失水分" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIEightWaterItem android:id="@id/water_4" android:layout_width="fill_parent" android:layout_height="wrap_content" app:eightwater_set_time="13:30" app:eightwater_set_desc="饭后来杯水，补充水分有助消化" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIEightWaterItem android:id="@id/water_5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:eightwater_set_time="15:30" app:eightwater_set_desc="下午茶时间来一杯，让你下午有精神" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIEightWaterItem android:id="@id/water_6" android:layout_width="fill_parent" android:layout_height="wrap_content" app:eightwater_set_time="17:00" app:eightwater_set_desc="下班前喝水，缓解工作的疲劳" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIEightWaterItem android:id="@id/water_7" android:layout_width="fill_parent" android:layout_height="wrap_content" app:eightwater_set_time="19:00" app:eightwater_set_desc="新陈代谢高峰时间，帮助身体排毒" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIEightWaterItem android:id="@id/water_8" android:layout_width="fill_parent" android:layout_height="wrap_content" app:eightwater_set_time="20:30" app:eightwater_set_desc="睡前2小时来一杯，为夜间储存水分" />
+</LinearLayout>

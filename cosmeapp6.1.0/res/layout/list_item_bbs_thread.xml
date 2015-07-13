@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/selector_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="?separatorHeight" android:layout_alignParentBottom="true" layout="@layout/line_separator" />
+    <RelativeLayout android:id="@id/avatar_layout" android:paddingBottom="1.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="8.0dip">
+        <com.makeramen.RoundedImageView android:id="@id/avatar" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/mypic" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@string/app_name" app:corner_radius="360.0dip" app:border_width="0.0dip" />
+        <ImageView android:id="@id/v" android:background="@drawable/gm" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar_layout">
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_middle" android:ellipsize="end" android:gravity="center|left" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="漠天来地球" />
+        <TextView android:textSize="@dimen/font_middle" android:ellipsize="end" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="2.0dip" android:text="Hello world~!" android:layout_weight="1.0" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/images_view" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="8.0dip">
+            <RelativeLayout android:id="@id/image_llayout" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <ImageView android:id="@id/image_1" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/default_pic" />
+                <ImageView android:id="@id/image_2" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/default_pic" android:layout_toRightOf="@id/image_1" />
+                <ImageView android:id="@id/image_3" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/default_pic" android:layout_toRightOf="@id/image_2" />
+                <ImageView android:id="@id/image_4" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/default_pic" android:layout_toRightOf="@id/image_3" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/video_image_rlayout" android:layout_width="wrap_content" android:layout_height="60.0dip">
+                <ImageView android:id="@id/video_image" android:layout_width="106.599976dip" android:layout_height="60.0dip" android:src="@drawable/default_pic" android:scaleType="centerCrop" />
+                <ImageView android:background="@drawable/ic_video" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <TextView android:textSize="@dimen/font_mini" android:textColor="@color/default_grey_middle" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_time" android:drawablePadding="5.0dip" android:layout_centerVertical="true" />
+            <TextView android:id="@id/is_pic_icon" android:background="@drawable/is_pic" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/time" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_middle" android:id="@id/post_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11" android:drawableLeft="@drawable/ic_normal_post" android:drawablePadding="5.0dip" android:layout_toLeftOf="@id/zan_count" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_middle" android:id="@id/zan_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="11" android:drawableLeft="@drawable/ic_normal_zan" android:drawablePadding="5.0dip" android:layout_toLeftOf="@id/zan_count" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_small" android:gravity="center|left" android:id="@id/stick" android:background="@drawable/digtop1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/default_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <TextView android:id="@id/icon" android:background="@drawable/userhome_mywant" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="@dimen/padding_edges" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/user_home_grey" android:id="@id/type_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="点评" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/user_home_light_grey" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_edges" android:text="0" android:layout_toRightOf="@id/type_desc" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/user_home_light_grey" android:id="@id/view_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_edges" android:text="查看全部 >" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <include layout="@layout/line_separator" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_layout">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/image1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/mypic" android:layout_weight="1.0" />
+            <ImageView android:id="@id/image2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/mypic" android:layout_weight="1.0" />
+            <ImageView android:id="@id/image3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/mypic" android:layout_weight="1.0" />
+            <ImageView android:id="@id/image4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/mypic" android:layout_weight="1.0" />
+            <ImageView android:id="@id/image5" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/mypic" android:layout_weight="1.0" />
+            <ImageView android:id="@id/image6" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/mypic" android:layout_weight="1.0" />
+        </LinearLayout>
+        <include layout="@layout/line_separator" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/msg_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_layout">
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/user_home_light_grey" android:gravity="center" android:layout_gravity="center" android:id="@id/msg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <include layout="@layout/line_separator" />
+    </RelativeLayout>
+</RelativeLayout>

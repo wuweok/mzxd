@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/notice_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/transparent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:fastScrollEnabled="true" android:scrollbarFadeDuration="200" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_below="@id/notice_listview">
+        <View android:background="#ffcacac7" android:layout_width="1.0dip" android:layout_height="24.0dip" />
+        <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/ic_system_logo" />
+        <View android:background="#ffcacac7" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <ImageView android:id="@id/no_system_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_system_notice" android:layout_centerInParent="true" />
+</RelativeLayout>

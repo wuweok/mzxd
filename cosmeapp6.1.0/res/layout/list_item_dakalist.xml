@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/default_grey_bg" android:paddingLeft="@dimen/spacing_middle" android:paddingTop="@dimen/spacing_middle" android:paddingRight="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.RoundedImageView android:id="@id/daka_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:corner_radius="2.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rect_round_halfblack" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/daka_cover" android:layout_alignBottom="@id/daka_cover" android:layout_centerInParent="true">
+        <com.makeramen.RoundedImageView android:id="@id/daka_avatar" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/loading_avatar" android:scaleType="fitXY" app:corner_radius="360.0dip" />
+        <TextView android:textSize="@dimen/font_big" android:textColor="@color/default_white" android:id="@id/daka_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_mini" android:text="叮当小妹" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <ImageView android:id="@id/daka_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/identify_orange" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_daka_flag" android:id="@id/daka_vt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="宇宙无敌种草机" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_middle">
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_white" android:id="@id/daka_threads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_middle" android:text="帖子:0" android:minEms="3" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_white" android:id="@id/daka_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_middle" android:text="点评:0" android:minEms="3" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_white" android:id="@id/daka_follows" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_middle" android:text="关注:0" android:minEms="3" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_white" android:id="@id/daka_fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_middle" android:text="粉丝:0" android:minEms="3" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:id="@id/daka_followbtn" android:background="@drawable/ic_daka_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+            <TextView android:id="@id/daka_infobtn" android:background="@drawable/ic_daka_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

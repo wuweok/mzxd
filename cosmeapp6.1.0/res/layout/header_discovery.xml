@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/white" android:paddingLeft="@dimen/spacing_middle" android:paddingTop="@dimen/spacing_middle" android:paddingRight="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.buykee.views.UIGGallery android:id="@id/bbsact_gallery" android:layout_width="fill_parent" android:layout_height="198.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/white" android:paddingLeft="@dimen/spacing_big" android:paddingRight="@dimen/spacing_big" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginBottom="3.0dip">
+            <com.buykee.princessmakeup.classes.bbs.views.UIBBSFloorZanListView android:id="@id/bbsact_avatars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/bbsact_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_act_join" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="89.0dip" android:layout_marginTop="@dimen/spacing_middle">
+        <RelativeLayout android:id="@id/discovery_act_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bbs_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_discovery_bbsact" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="热门活动" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/notice_icon_text_size" android:textColor="@color/default_white" android:gravity="center" android:id="@id/discovery_act_notice" android:background="@drawable/notice_icon" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/notice_icon_size" android:layout_marginLeft="-5.0dip" android:layout_marginTop="10.0dip" android:minWidth="@dimen/notice_icon_size" android:text="0" android:layout_toRightOf="@id/bbs_view" />
+        </RelativeLayout>
+        <View android:layout_gravity="center_vertical" android:background="#ffe5e5e5" android:layout_width="0.5dip" android:layout_height="64.0dip" />
+        <RelativeLayout android:id="@id/discovery_try_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_discovery_tryact" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="免费试用" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/notice_icon_text_size" android:textColor="@color/default_white" android:gravity="center" android:id="@id/discovery_try_notice" android:background="@drawable/notice_icon" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/notice_icon_size" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:minWidth="@dimen/notice_icon_size" android:text="" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:layout_gravity="center_vertical" android:background="#ffe5e5e5" android:layout_width="0.5dip" android:layout_height="64.0dip" />
+        <RelativeLayout android:id="@id/discovery_article_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_discovery_article" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="精彩专题" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/notice_icon_text_size" android:textColor="@color/default_white" android:gravity="center" android:id="@id/discovery_article_notice" android:background="@drawable/notice_icon" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/notice_icon_size" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:minWidth="@dimen/notice_icon_size" android:text="" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_grey_dark" android:gravity="center|left" android:background="@drawable/white" android:paddingLeft="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_marginTop="@dimen/spacing_middle" android:text="热门分类" />
+</LinearLayout>

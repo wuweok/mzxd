@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.buykee.princessmakeup">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <application android:allowBackup="false" android:icon="@drawable/cosmeapp_logo" android:label="@string/app_name" android:largeHeap="true" android:name="com.buykee.princessmakeup.Cosmeapp" android:theme="@style/MyTheme" android:uiOptions="splitActionBarWhenNarrow">
+        <service android:name="com.umeng.update.net.DownloadingService" android:process=":DownloadingService"/>
+        <activity android:name="com.umeng.update.UpdateDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.buykee.princessmakeup.classes.StartActivity" android:screenOrientation="portrait" android:theme="@style/startActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="cosmeapp"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="io.vov.vitamio.activity.InitActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.LetterToUserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.buykee.princessmakeup.classes.alarm.AlarmAlertActivity" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@android:style/Theme.Wallpaper.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.buykee.princessmakeup.classes.alarm.AlarmAlertSlientActivity" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.alarm.AlarmAlertInsideActivity" android:theme="@style/alarm_inside" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.CategoryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.bbs.TagRecommendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.GongxiaoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.GongxiaoListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.PriceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.PriceListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.BrandListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.CateMoreActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.SubitemActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.RankProductListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.BrandMultiIndexActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.assist.AboutAppActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.home.UserHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.home.UserHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.TopActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.freetry.FreeTryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.ProductDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.FavouriteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.buykee.princessmakeup.classes.assist.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.LatestCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.SearchResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.assist.AppActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:name="com.buykee.princessmakeup.classes.assist.CameraActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.buykee.princessmakeup.classes.assist.SkinTestActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.assist.TestResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.assist.ContactUsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.RankCateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.bbs.BBSThreadListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.bbs.BBSThreadDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.bbs.BBSSearchResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.bbs.BBSAllGroupsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.bbs.GoodThreadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.bbs.BBSActThreadListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.ProductListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.NewProductListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.bbs.ImageDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.bbs.PublishThreadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.PublishCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:hardwareAccelerated="true" android:name="com.buykee.princessmakeup.classes.HtmlActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.UserXindeThreadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.user.NoticeManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.user.MyBBSFavActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.user.UserFollowedDynamicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.user.MyBBSThreadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.user.SystemNoticeListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.login.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.buykee.princessmakeup.classes.login.LoginInfoSetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.buykee.princessmakeup.classes.user.UserInfoSetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.buykee.princessmakeup.classes.user.FansListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.buykee.princessmakeup.classes.user.NewFansListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.buykee.princessmakeup.classes.bbs.BBSDarenListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.umeng.fb.ConversationActivity"/>
+        <activity android:name="com.umeng.fb.ContactActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.sharesdk.framework.ShareSDKUIShell" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="AuthorizeAdapter" android:value="com.buykee.princessmakeup.classes.common.adapter.MyAdapter"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.buykee.princessmakeup.wxapi.WXEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.buykee.princessmakeup.classes.credit.AttendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.credit.CreditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.topic.TopicUnionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.topic.TopicProblemListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.topic.TopicProblemSearchResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.buykee.princessmakeup.classes.topic.TopicCateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.buykee.princessmakeup.classes.indexpage.MainTabActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="com.buykee.princessmakeup.classes.indexpage.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.user.MessageCenterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.alarm.AlarmSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.alarm.AlarmSoundSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.alarm.AlarmDetailSetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.alarm.MaskCalculatorActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.alarm.CustomAlarmMessageSetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.buykee.princessmakeup.classes.freetry.FreeTryListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.freetry.ActivityListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.product.ArticleListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.common.NetworkErrorActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.buykee.princessmakeup.classes.common.GlobalSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.buykee.princessmakeup.classes.common.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/startActivityTheme"/>
+        <activity android:name="com.buykee.princessmakeup.classes.credit.ShakeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.buykee.princessmakeup.classes.VideoActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.buykee.princessmakeup.classes.VideoActivityCompat"/>
+        <service android:name="com.umeng.common.net.DownloadingService" android:process=":DownloadingService"/>
+        <receiver android:name="com.buykee.princessmakeup.receivers.AlarmReceiver"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.buykee.princessmakeup.classes.meizu.ActionBarStyleStandardMode" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" android:screenOrientation="portrait"/>
+        <service android:name="cn.sharesdk.server.RemoteService" android:process=":remote"/>
+        <receiver android:exported="false" android:name="com.umeng.message.NotificationProxyBroadcastReceiver"/>
+        <receiver android:name="com.umeng.message.RegistrationReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengBroadcastReceiver">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.buykee.princessmakeup.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.umeng.message.UmengService" android:process=":umengService_v1">
+            <intent-filter>
+                <action android:name="com.buykee.princessmakeup.intent.action.START"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.buykee.princessmakeup.intent.action.COCKROACH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="org.android.agoo.service.ElectionService" android:process=":umengService_v1">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_V2"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService"/>
+        <service android:name="com.umeng.message.UmengDownloadResourceService"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="5137f6e35270156207000035"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="baidu"/>
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="dbeab15e5010b916d4f4cc552818af2c"/>
+    </application>
+</manifest>

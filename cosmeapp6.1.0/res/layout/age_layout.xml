@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_productdetail_age" android:textColor="@color/pinfo_color" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/age_interval" android:layout_width="@dimen/pinfo_age_width" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="20岁以下" />
+    <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/age_length" android:background="#ffff9966" android:layout_width="1.0dip" android:layout_height="11.0dip" />
+    <TextView android:textSize="@dimen/font_mini" android:textColor="@color/pinfo_color" android:layout_gravity="center_vertical" android:id="@id/age_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:maxWidth="35.0dip" android:text="0" android:singleLine="true" />
+</LinearLayout>

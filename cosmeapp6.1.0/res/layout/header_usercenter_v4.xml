@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.buykee.views.UIGViewPagerBanner android:id="@id/cartoon_banner" android:background="@color/default_pink" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="140.0dip" />
+    <RelativeLayout android:id="@id/avatar_layout" android:background="@drawable/mybg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/fans_view" android:background="@drawable/fansbg" android:layout_width="50.0dip" android:layout_height="90.0dip" android:layout_marginLeft="@dimen/mid_padding_edges" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/he_follows_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="@dimen/font_mini" android:textColor="#ffcccccc" android:gravity="center" android:id="@id/he_follows_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关注" />
+                    <com.buykee.views.UIGAutofitTextView android:textSize="@dimen/font_mini" android:textColor="#ffcccccc" android:gravity="center" android:id="@id/he_follows" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:layout_below="@id/he_follows_desc" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/his_follower_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="@dimen/font_mini" android:textColor="#ffcccccc" android:gravity="center" android:id="@id/his_follower_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="粉丝" />
+                    <com.buykee.views.UIGAutofitTextView android:textSize="@dimen/font_mini" android:textColor="#ffcccccc" android:gravity="center" android:id="@id/his_follower" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:layout_below="@id/his_follower_desc" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <com.makeramen.RoundedImageView android:id="@id/myavatar" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/default_personal_avatar" android:scaleType="fitXY" android:layout_centerInParent="true" app:corner_radius="360.0dip" app:border_width="3.0dip" app:border_color="#ccffffff" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/myavatar">
+            <TextView android:textColor="@color/default_white" android:id="@id/tv_credit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0积分" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

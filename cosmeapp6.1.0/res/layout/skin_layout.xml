@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/skin_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="7.0">
+            <TextView android:textSize="@dimen/font_mini" android:layout_gravity="center" android:id="@id/gan_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="0%" />
+            <ImageView android:id="@id/gan" android:background="@drawable/zhong_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="7.0">
+            <TextView android:textSize="@dimen/font_mini" android:layout_gravity="center" android:id="@id/you_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="0%" />
+            <ImageView android:id="@id/you" android:background="@drawable/you_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="7.0">
+            <TextView android:textSize="@dimen/font_mini" android:layout_gravity="center" android:id="@id/zhong_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="0%" />
+            <ImageView android:id="@id/zhong" android:background="@drawable/gan_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="7.0">
+            <TextView android:textSize="@dimen/font_mini" android:layout_gravity="center" android:id="@id/hun_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="0%" />
+            <ImageView android:id="@id/hunhe" android:background="@drawable/hunhe_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="7.0">
+            <TextView android:textSize="@dimen/font_mini" android:layout_gravity="center" android:id="@id/min_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="0%" />
+            <ImageView android:id="@id/mingan" android:background="@drawable/mingan_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/line_separator" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/skin_layout">
+        <TextView android:textSize="@dimen/font_mini" android:textColor="@color/pinfo_color" android:gravity="center" android:id="@id/gan_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="干性" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_mini" android:textColor="@color/pinfo_color" android:gravity="center" android:id="@id/you_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="油性" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_mini" android:textColor="@color/pinfo_color" android:gravity="center" android:id="@id/zhong_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="中性" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_mini" android:textColor="@color/pinfo_color" android:gravity="center" android:id="@id/hun_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="混合" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_mini" android:textColor="@color/pinfo_color" android:gravity="center" android:id="@id/min_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="敏感" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

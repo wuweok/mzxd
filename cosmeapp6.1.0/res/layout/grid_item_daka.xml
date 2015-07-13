@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.RoundedImageView android:layout_gravity="center" android:id="@id/daka_cover" android:layout_width="145.0dip" android:layout_height="109.0dip" android:src="@drawable/loading_bbs" android:scaleType="centerCrop" android:contentDescription="@string/app_name" app:corner_radius="2.0dip" app:border_width="0.0dip" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@drawable/white" android:gravity="center_vertical" android:id="@id/daka_title" android:background="@drawable/rect_bottom_dis" android:paddingLeft="@dimen/spacing_middle" android:paddingRight="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="31.0dip" android:text="达人" android:drawableRight="@drawable/ic_arrow_white" android:layout_alignParentBottom="true" />
+</RelativeLayout>

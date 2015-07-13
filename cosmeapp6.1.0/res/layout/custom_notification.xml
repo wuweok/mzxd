@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/custom_notification" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/downLoadIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/progressPercent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_black" android:ellipsize="end" android:id="@id/fileName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <ProgressBar android:id="@id/downLoadProgress" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+</LinearLayout>

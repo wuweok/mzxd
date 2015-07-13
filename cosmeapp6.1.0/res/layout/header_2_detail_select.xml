@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tabs_thread_front_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:gravity="center" android:id="@id/tab_productthreads_1" android:background="@drawable/tab_productthreads_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:id="@id/tab_bbsthreads_1" android:background="@drawable/tab_bbsthreads_selected" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/line_separator" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_margin_default" android:layout_marginTop="@dimen/activity_margin_default" android:layout_marginRight="@dimen/activity_margin_default" android:layout_marginBottom="10.0dip">
+        <com.buykee.views.UIGAutofitTextView android:textSize="@dimen/font_small" android:gravity="center" android:id="@id/star_tab" android:background="@drawable/select_bg" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/activity_margin_default" android:text="所有评分" android:layout_weight="1.0" />
+        <com.buykee.views.UIGAutofitTextView android:textSize="@dimen/font_small" android:gravity="center" android:id="@id/age_tab" android:background="@drawable/select_bg" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/activity_margin_default" android:text="所有年龄" android:layout_weight="1.0" />
+        <com.buykee.views.UIGAutofitTextView android:textSize="@dimen/font_small" android:gravity="center" android:id="@id/skin_tab" android:background="@drawable/select_bg" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="所有肤质" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/bbs_page_bottom_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="?separatorHeight" android:layout_alignParentTop="true" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/bbs_page_bottom_height" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_toLeftOf="@id/fatie_btn" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/font_small" android:gravity="center" android:id="@id/pre_page_btn" android:background="@drawable/ic_detail_bottom_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font_middle" android:textColor="@color/bottom_detail_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/choose_page_btn" android:background="@drawable/ic_detail_bottom_mid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1/1" android:singleLine="true" android:layout_toLeftOf="@id/next_page_btn" android:layout_toRightOf="@id/pre_page_btn" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font_small" android:gravity="center" android:id="@id/next_page_btn" android:background="@drawable/ic_detail_bottom_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/fatie_btn" android:layout_width="52.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/icon" android:background="@drawable/fatie" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

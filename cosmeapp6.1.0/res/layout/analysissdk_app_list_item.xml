@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.sharesdk.open.applist.AsyncImageIcon android:id="@id/imv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:src="@drawable/ic_launcher" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/layout_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_toLeftOf="@id/imv_download" android:layout_toRightOf="@id/imv_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="20.0sp" android:gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="back" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:id="@id/tv_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="APP LIST " android:singleLine="true" android:layout_below="@id/tv_title" />
+    </RelativeLayout>
+    <ImageView android:id="@id/imv_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_marginLeft="5.0dip" android:src="@android:drawable/stat_sys_download" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+</RelativeLayout>

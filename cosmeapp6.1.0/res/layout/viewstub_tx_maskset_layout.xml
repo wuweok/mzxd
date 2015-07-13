@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.buykee.princessmakeup.classes.alarm.views.UIAlarmSetHeaderMaskSet android:id="@id/tx_maskset" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.buykee.princessmakeup.classes.alarm.views.UIAlarmSetHeaderTimeSet android:id="@id/tx_timeset" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

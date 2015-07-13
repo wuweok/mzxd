@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/feed_back" android:title="@string/feed_back" android:showAsAction="never" />
+    <item android:id="@id/check_version" android:title="@string/check_version" android:showAsAction="never" />
+    <item android:id="@id/exit" android:title="@string/exit" android:showAsAction="never" />
+</menu>

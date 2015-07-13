@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.buykee.princessmakeup.classes.alarm.views.UIMaskCalculator android:id="@id/mask_calulator_time_chooser" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Chronometer android:id="@id/chronometer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chronometer" android:layout_centerInParent="true" />
+        <TextView android:textSize="50.0sp" android:gravity="center" android:id="@id/timer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="05:00" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include layout="@layout/line_separator" />
+    <RelativeLayout android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="22.0sp" android:textColor="@color/default_white" android:id="@id/operation_btn" android:background="@drawable/mask_calculator_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始\n计时" android:layout_centerInParent="true" android:lineSpacingExtra="3.0dip" style="@style/buttonStyle" />
+    </RelativeLayout>
+</LinearLayout>

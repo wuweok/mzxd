@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/clock_detail_switch_btn" />
+            <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:paddingTop="80.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ViewStub android:id="@id/viewstub_tx_timeset" android:layout="@layout/viewstub_tx_timeset_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ViewStub android:id="@id/viewstub_tx_maskset" android:layout="@layout/viewstub_tx_maskset_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ViewStub android:id="@id/viewstub_tx_medsset" android:layout="@layout/viewstub_tx_medsset_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.buykee.princessmakeup.classes.alarm.views.UIWeekSetView android:id="@id/week_set_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.buykee.princessmakeup.classes.alarm.views.UIEightWaterSetView android:id="@id/eightwater_set_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/mx_talk_layout" android:layout_width="fill_parent" android:layout_height="90.0dip">
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_middle" android:id="@id/mx_talk_clock_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginRight="10.0dip" android:text="@string/alarm_custom_desc" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.1" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/mx_talk_layout" android:layout_width="fill_parent" android:layout_height="85.0dip">
+                    <ImageView android:id="@id/icon" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/mx_time" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.buykee.views.UIGAlarmSettingHelpView android:id="@id/alarm_help_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.buykee.views.UIGTimeChooser android:id="@id/time_chooser" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

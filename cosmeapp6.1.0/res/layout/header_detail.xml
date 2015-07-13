@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/detail_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_small" android:ellipsize="end" android:layout_gravity="center" android:id="@id/desc" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:singleLine="true" />
+    <com.buykee.views.UIGImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/invisible" />
+    <RelativeLayout android:background="#fff1f1f1" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="@dimen/font_small" android:id="@id/price_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="价格" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/red" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/price_desc" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="#ff1e90ff" android:id="@id/detail_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="详细介绍 >" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#fff1f1f1" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="@dimen/font_small" android:id="@id/star_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="评分" />
+        <include android:id="@id/star_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/star_desc" android:layout_centerVertical="true" layout="@layout/layout_star" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="#ff1e90ff" android:id="@id/comment_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="18.0dip">
+        <Button android:id="@id/want" android:background="@drawable/want" android:layout_width="400.0dip" android:layout_height="35.0dip" android:layout_marginRight="12.0dip" android:layout_weight="1.0" style="@style/buttonStyle" />
+        <Button android:id="@id/have" android:background="@drawable/have" android:layout_width="400.0dip" android:layout_height="35.0dip" android:layout_marginRight="12.0dip" android:layout_weight="1.0" style="@style/buttonStyle" />
+        <Button android:id="@id/comment" android:background="@drawable/dianping" android:layout_width="400.0dip" android:layout_height="35.0dip" android:layout_weight="1.0" style="@style/buttonStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/pinfo_color" android:layout_gravity="center_vertical" android:id="@id/star_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="5星" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/star_length" android:background="@color/star_line_color" android:layout_width="1.0dip" android:layout_height="11.0dip" />
+    <TextView android:textSize="@dimen/font_mini" android:textColor="@color/pinfo_color" android:layout_gravity="center_vertical" android:id="@id/star_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:maxWidth="@dimen/button_bar_height" android:text="0%" android:singleLine="true" />
+</LinearLayout>

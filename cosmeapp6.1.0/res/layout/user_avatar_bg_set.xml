@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.buykee.views.UIGImageView android:id="@id/mybg" android:paddingBottom="@dimen/small_padding_edges" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/small_padding_edges" android:src="@drawable/mybg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.makeramen.RoundedImageView android:id="@id/myavatar" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/default_personal_avatar" android:scaleType="fitXY" android:layout_centerInParent="true" app:corner_radius="360.0dip" app:border_width="3.0dip" app:border_color="#ccffffff" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mid_padding_edges" android:layout_alignBottom="@id/mybg">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_padding_edges" android:layout_weight="1.0">
+            <Button android:id="@id/set_avatar_btn" android:background="@drawable/set_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/buttonStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_padding_edges" android:layout_weight="0.0">
+            <Button android:id="@id/set_bg_btn" android:background="@drawable/set_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/buttonStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

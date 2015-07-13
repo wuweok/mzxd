@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:paddingLeft="@dimen/spacing_middle" android:paddingRight="@dimen/spacing_middle" android:paddingBottom="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/discovery_left_lay" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.makeramen.RoundedImageView android:layout_gravity="center" android:id="@id/discovery_left_cover" android:layout_width="145.0dip" android:layout_height="109.0dip" android:src="@drawable/loading_bbs" android:scaleType="centerCrop" android:contentDescription="@string/app_name" app:corner_radius="2.0dip" app:border_width="0.0dip" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@drawable/white" android:gravity="center_vertical" android:id="@id/discovery_left_title" android:background="@drawable/rect_bottom_dis" android:paddingLeft="@dimen/spacing_middle" android:paddingRight="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="31.0dip" android:text="推荐" android:drawableRight="@drawable/ic_arrow_white" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/discovery_right_lay" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.makeramen.RoundedImageView android:id="@id/discovery_right_cover" android:layout_width="145.0dip" android:layout_height="109.0dip" android:src="@drawable/loading_bbs" android:scaleType="centerCrop" android:contentDescription="@string/app_name" app:corner_radius="2.0dip" app:border_width="0.0dip" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@drawable/white" android:gravity="center_vertical" android:id="@id/discovery_right_title" android:background="@drawable/rect_bottom_dis" android:paddingLeft="@dimen/spacing_middle" android:paddingRight="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="31.0dip" android:text="推荐" android:drawableRight="@drawable/ic_arrow_white" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

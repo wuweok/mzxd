@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/network_error_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.buykee.views.UIGTitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftBackground="@drawable/back_normal" app:text="大姨妈" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/network_error" android:layout_centerInParent="true" />
+</RelativeLayout>

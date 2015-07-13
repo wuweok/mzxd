@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="-5.5dip" android:src="@drawable/mx_time" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="小主儿，护肤保养坚持才有效，设置好提醒事项，小助手到时会提醒你，让你不错过！" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.1" />
+    </RelativeLayout>
+    <include layout="@layout/line_separator" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/separator_top" android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tag_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/tag_logo" />
+            <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_blue" android:ellipsize="end" android:gravity="center" android:id="@id/tag1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:singleLine="true" />
+            <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_blue" android:ellipsize="end" android:gravity="center" android:id="@id/tag2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:singleLine="true" />
+            <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_blue" android:ellipsize="end" android:gravity="center" android:id="@id/tag3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:id="@id/spam" android:background="@drawable/spam_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" />
+        <TextView android:id="@id/edit" android:background="@drawable/edit_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" />
+        <TextView android:id="@id/reply" android:background="@drawable/reply_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/zan_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/default_grey_middle" android:gravity="center" android:id="@id/zan_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:text="xx人赞过" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_grey_middle" android:gravity="center|left" android:id="@id/post_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="共有xxx" android:layout_weight="1.0" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/default_white" android:gravity="center" android:id="@id/act_zan" android:background="@drawable/bbsthread_zan" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:text="点赞" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <include android:id="@id/avatar_line" layout="@layout/line_separator" />
+        <com.buykee.princessmakeup.classes.bbs.views.UIBBSFloorZanListView android:id="@id/zan_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    </LinearLayout>
+    <include layout="@layout/line_separator" />
+</LinearLayout>

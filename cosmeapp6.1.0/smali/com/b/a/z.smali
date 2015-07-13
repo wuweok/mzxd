@@ -1,0 +1,44 @@
+.class final Lcom/b/a/z;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/b/a/u;
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/b/a/l;Lcom/b/a/r;)Lcom/b/a/r;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lcom/b/a/l",
+            "<TT;>;",
+            "Lcom/b/a/r",
+            "<TT;>;)",
+            "Lcom/b/a/r",
+            "<TT;>;"
+        }
+    .end annotation
+
+    return-object p2
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "Scopes.NO_SCOPE"
+
+    return-object v0
+.end method

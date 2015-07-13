@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.buykee.views.UIGListTopDescView android:id="@id/top_title_desc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.buykee.views.UIGPRListView android:id="@id/listview" android:background="@drawable/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/bbs_page_bottom_height" android:listSelector="@drawable/transparent" android:scrollingCache="false" android:transcriptMode="alwaysScroll" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/top_title_desc" android:fastScrollEnabled="false" android:scrollbarFadeDuration="200" />
+        <include layout="@layout/mx_loading_bar" />
+        <com.buykee.views.UIGToastView android:id="@id/toast_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:visibility="visible" layout="@layout/layout_credit_share" />
+    <include android:id="@id/page_bottom" android:visibility="gone" layout="@layout/layout_bbsdetail_page_bottom" />
+    <com.buykee.views.UIGListChooser android:layout_gravity="bottom" android:id="@id/page_chooser" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

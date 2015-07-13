@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/user_blank" android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="@dimen/spacing_middle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/icon" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/default_avatar" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="@dimen/font_middle" android:textColor="@color/default_black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/ic_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include layout="@layout/line_separator" />
+</LinearLayout>

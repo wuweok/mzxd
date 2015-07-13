@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_grey_bg" android:paddingBottom="@dimen/home_index_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <com.makeramen.RoundedImageView android:id="@id/item_daren_avatar" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/default_avatar" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/app_name" app:corner_radius="360.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/item_daren_avatar" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/default_black" android:ellipsize="end" android:id="@id/item_daren_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="美妆管理员" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/item_daren_name">
+                <ImageView android:id="@id/item_daren_v" android:background="@drawable/gm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" />
+                <TextView android:textSize="@dimen/font_small" android:id="@id/item_daren_vt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="管理员" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/item_daren_follow_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guanzu" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:paddingLeft="@dimen/spacing_middle" android:paddingRight="@dimen/spacing_middle" android:paddingBottom="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.makeramen.RoundedImageView android:layout_gravity="center" android:id="@id/item_daren_image1" android:layout_width="92.0dip" android:layout_height="92.0dip" android:layout_marginRight="@dimen/spacing_small" android:src="@drawable/default_pic" android:scaleType="centerCrop" android:contentDescription="@string/app_name" app:corner_radius="2.0dip" app:border_width="0.0dip" />
+        <com.makeramen.RoundedImageView android:layout_gravity="center" android:id="@id/item_daren_image2" android:layout_width="92.0dip" android:layout_height="92.0dip" android:layout_marginRight="@dimen/spacing_small" android:src="@drawable/default_pic" android:scaleType="centerCrop" android:contentDescription="@string/app_name" app:corner_radius="2.0dip" app:border_width="0.0dip" />
+        <com.makeramen.RoundedImageView android:layout_gravity="center" android:id="@id/item_daren_image3" android:layout_width="92.0dip" android:layout_height="92.0dip" android:src="@drawable/default_pic" android:scaleType="centerCrop" android:contentDescription="@string/app_name" app:corner_radius="2.0dip" app:border_width="0.0dip" />
+    </LinearLayout>
+</LinearLayout>

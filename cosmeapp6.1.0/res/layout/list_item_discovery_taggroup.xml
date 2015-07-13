@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_grey_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/default_blue" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_taggroup_title" android:background="@drawable/white" android:paddingLeft="@dimen/spacing_middle" android:paddingRight="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="33.0dip" android:text="\#最新" android:singleLine="true" />
+    <com.buykee.views.UIGGrapeGridView android:id="@id/item_taggroup_gridview" android:background="@drawable/white" android:paddingLeft="@dimen/spacing_middle" android:paddingRight="@dimen/spacing_middle" android:paddingBottom="@dimen/spacing_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_middle" android:horizontalSpacing="@dimen/spacing_middle" android:verticalSpacing="@dimen/spacing_middle" android:numColumns="3" />
+</LinearLayout>

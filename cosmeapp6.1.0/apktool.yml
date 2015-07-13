@@ -1,0 +1,18 @@
+version: 2.0.0
+apkFileName: cosmeapp6.1.0.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '10'
+  targetSdkVersion: '17'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '6100'
+  versionName: 6.1.0
+compressionType: false
+sharedLibrary: false
+unknownFiles:
+  org/apache/http/entity/mime/version.properties: '8'

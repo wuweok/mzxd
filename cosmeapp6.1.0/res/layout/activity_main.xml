@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/realtabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="49.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/publish_grey_bg" android:background="#88000000" android:paddingBottom="100.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <LinearLayout android:id="@id/publish_view" android:background="@drawable/publish_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/dianpingBtn" android:background="@drawable/publish_dianping" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="dianpingBtnClicked" />
+            <Button android:id="@id/xindeBtn" android:background="@drawable/publish_xinde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="xindeBtnClicked" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/main_tabs" android:background="@drawable/bottom" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_alignParentBottom="true">
+        <com.buykee.princessmakeup.classes.indexpage.views.UIMainTab android:id="@id/maintab_home" android:layout_width="0.0dip" android:layout_height="49.0dip" android:layout_weight="1.0" app:tab_icon="@drawable/selector_bottom_home" app:tab_text="@string/maintab_home" />
+        <com.buykee.princessmakeup.classes.indexpage.views.UIMainTab android:id="@id/maintab_product" android:layout_width="0.0dip" android:layout_height="49.0dip" android:layout_weight="1.0" app:tab_icon="@drawable/selector_bottom_product" app:tab_text="@string/maintab_product" />
+        <include android:layout_weight="1.0" layout="@layout/maintab_publish" />
+        <com.buykee.princessmakeup.classes.indexpage.views.UIMainTab android:id="@id/maintab_discovery" android:layout_width="0.0dip" android:layout_height="49.0dip" android:layout_weight="1.0" app:tab_icon="@drawable/selector_bottom_discovery" app:tab_text="@string/maintab_discovery" />
+        <com.buykee.princessmakeup.classes.indexpage.views.UIMainTab android:id="@id/maintab_mine" android:layout_width="0.0dip" android:layout_height="49.0dip" android:layout_weight="1.0" app:tab_icon="@drawable/selector_bottom_mine" app:tab_text="@string/maintab_mine" />
+    </LinearLayout>
+</RelativeLayout>

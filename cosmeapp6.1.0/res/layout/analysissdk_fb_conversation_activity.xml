@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="#ff303537" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <LinearLayout android:id="@id/ll_back" android:paddingLeft="9.0dip" android:paddingRight="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/analysissdk_back_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/analysissdk_sharesdk_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#ffcfcfcf" android:layout_gravity="center_vertical" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="right" android:id="@id/imv_add_contact" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/analysissdk_menu_addcontact" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <cn.sharesdk.feedback.ConversationListView android:id="@id/listview" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textColor="#ff000000" android:id="@id/et_msg" android:background="@drawable/analysissdk_fb_et_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40.0dip" android:layout_weight="1.0" />
+        <Button android:textSize="15.0sp" android:textColor="#ff000000" android:layout_gravity="bottom|center|right" android:id="@id/btn_send_msg" android:background="@drawable/analysissdk_fb_btn_selector" android:padding="2.0dip" android:layout_width="60.0dip" android:layout_height="40.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="5.0dip" android:text="@string/analysissdk_btn_send_msg" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/bottomtab_home_selected" android:id="@id/menu_home" android:title="" android:showAsAction="always" />
+    <item android:icon="@drawable/bottomtab_meizhuang" android:id="@id/menu_product" android:title="" android:showAsAction="always" />
+    <item android:icon="@drawable/bottomtab_publish" android:id="@id/men_publish" android:title="" android:showAsAction="always" />
+    <item android:icon="@drawable/bottomtab_usercenter" android:id="@id/menu_usercenter" android:title="" android:showAsAction="always" />
+    <item android:icon="@drawable/bottomtab_bbs" android:id="@id/menu_bbs" android:title="" android:showAsAction="always" />
+</menu>
